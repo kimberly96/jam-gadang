@@ -14,6 +14,7 @@ public class Soal6 extends JPanel{
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g;
+        //test
         
         g2d.setColor(Color.blue);
         g2d.drawLine(10, 25, 400-10, 25);
