@@ -19,6 +19,7 @@ public class Soal6 extends JPanel{
         g2d.setColor(Color.blue);
         g2d.drawLine(10, 25, 400-10, 25);
         g2d.draw(new Line2D.Double(10, 160, 390, 160));
+        //halo
         
         g2d.setColor(Color.green);
         g2d.fillRect(10, 40, 100, 50);
