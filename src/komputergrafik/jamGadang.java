@@ -19,6 +19,12 @@ public class jamGadang extends JPanel{
         g.setColor(b);
         g.drawOval(175, 175, 325, 325);
         
+        Color c = new Color (31, 30, 29);
+        g.setColor(c);
+        g.drawRect(289, 60, 95, 75);
+        
+        g.drawRect(270, 135, 130, 40);
+        g.draw3DRect(WIDTH, WIDTH, WIDTH, WIDTH, true);
           
     }
 }
