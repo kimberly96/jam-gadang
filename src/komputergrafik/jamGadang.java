@@ -6,8 +6,8 @@ import javax.swing.*;
 
 public class jamGadang extends JPanel{
     public jamGadang() {
-        this.setPreferredSize(new Dimension(800,600));
-        Color a = new Color(255,234,208);
+        this.setPreferredSize(new Dimension(650,750));
+        Color a = new Color(247, 241, 208);
         this.setBackground(a);
     }
     
@@ -15,9 +15,9 @@ public class jamGadang extends JPanel{
         super.paintComponent(g);
          
         
-        Color b = new Color(233,150,122);
+        Color b = new Color(178,34,33);
         g.setColor(b);
-        g.drawOval(WIDTH, WIDTH, WIDTH, WIDTH);
+        g.drawOval(175, 175, 325, 325);
         
           
     }
