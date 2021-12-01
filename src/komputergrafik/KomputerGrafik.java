@@ -1,5 +1,4 @@
-
-package KomputerGrafik;
+package komputergrafik;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.geom.*;
@@ -12,7 +11,7 @@ public class KomputerGrafik {
         frame.setTitle("Aplikasi Komputer Grafik");
   
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        Soal6 canvas = new Soal6();
+        jamGadang canvas = new jamGadang();
         frame.getContentPane().add(canvas);
         frame.pack();
 

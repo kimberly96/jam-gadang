@@ -24,7 +24,7 @@ public class tugas extends JApplet {
      public static void main(String[] args) {
         // TODO code application logic here
         JFrame frame = new JFrame();
-        frame.setTitle("Tugas Sebelum Uts");
+        frame.setTitle("Jam Gadang");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JApplet applet = new tugas();
         applet.init();
@@ -50,23 +50,7 @@ public class tugas extends JApplet {
             super.paintComponent(g);
             Graphics2D g2 = (Graphics2D)g;
             Color warna;
-            
-            //segitiga
-            g.drawLine(100, 100, 100, 300);
-            g.drawLine(100, 100, 300, 300);
-            g.drawLine(100, 300, 300, 300);
-            
-            //layang-layang
-            g.drawLine(200, 400, 100, 500);
-            g.drawLine(200, 400, 300, 500);
-            g.drawLine(300, 500, 200, 650);
-            g.drawLine(100, 500, 200, 650);
-            
-            g.drawLine(500, 100, 800, 100);
-            g.drawLine(500, 100, 500, 300);
-            g.drawLine(500, 300, 800, 300);
-            g.drawLine(800, 300, 800, 100);
-            
+                     
             
         }
     }
