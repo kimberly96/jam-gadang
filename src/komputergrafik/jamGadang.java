@@ -6,13 +6,14 @@ import javax.swing.*;
 
 public class jamGadang extends JPanel{
     public jamGadang() {
-        this.setPreferredSize(new Dimension(600,600));
+        this.setPreferredSize(new Dimension(800,600));
         this.setBackground(Color.WHITE);
     }
     
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
          
+        
           
     }
 }
