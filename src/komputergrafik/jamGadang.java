@@ -57,19 +57,43 @@ public class jamGadang extends JPanel{
         
         
         //kotak
-        g.drawRect(275,160,25,25);
-        g.drawRect(300,160,25,25);
-        g.drawRect(325,160,25,25);
-        g.drawRect(350,160,25,25);
+        for (int i = 0; i <=90; i=i+25) {
+            g.drawRect (275+i,160,25,25);
+   
+       }
+        //g.drawRect(275,160,25,25);
+        //g.drawRect(300,160,25,25);
+        //g.drawRect(325,160,25,25);
+        //g.drawRect(350,160,25,25);
+        
+        
         
         //kotak2
         g.drawRect(275,185,100,100);
+        g.drawLine(270, 185, 380, 185);
         
         //kotak3
         g.drawRect(275,285,100,70);
         g.drawRect(320,295,15,25);
         g.drawRect(320,320,15,25);
-    
+        g.drawLine(270, 285, 380, 285);
+        
+        //kotak4
+        g.drawRect(275,355,100,70);
+        
+        g.drawRect(295,365,15,25);
+        g.drawRect(295,390,15,25);
+        g.drawLine(270, 285, 380, 285);
+        
+        
+        g.drawRect(320,365,15,25);
+        g.drawRect(320,390,15,25);
+        
+        g.drawRect(345,365,15,25);
+        g.drawRect(345,390,15,25);
+        
+        //kotak5
+        g.drawRect(265,425,125,90);
         
         
           
