@@ -46,13 +46,22 @@ public class jamGadang extends JPanel{
         QuadCurve2D.Double curve6 = new QuadCurve2D.Double(270,30,260,60,305,80);
         g2.draw(curve6);
         
+        //bangunan yang ada pintu
         g.drawRect(290, 100, 70, 60);
         g2.drawRoundRect(310, 130, 30, 50, 30, 20); 
         
         g.setColor(new Color(247, 241, 208));
         g.fillRect(260, 160, 130, 30);
         g.setColor(Color.black);
-        g.drawRect(260, 160, 130, 30);
+       // g.drawRect(260, 160, 130, 30);
+        
+        
+        //kotak
+        g.drawRect(285,160,20,20);
+        g.drawRect(305,160,20,20);
+        g.drawRect(325,160,20,20);
+        g.drawRect(345,160,20,20);
+        
         
           
     }
