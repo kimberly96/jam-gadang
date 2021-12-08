@@ -18,7 +18,7 @@ public class jamGadang extends JPanel{
    
     public jamGadang() {
         this.setPreferredSize(new Dimension(650,750));
-        Color bgColor = new Color(247, 241, 208);
+        Color bgColor = new Color(241, 250, 207);
         this.setBackground(bgColor);
         
         new Timer(1000, (ActionEvent e) -> {
@@ -48,6 +48,7 @@ public class jamGadang extends JPanel{
         g2.setStroke(new BasicStroke(2));
         
         // Draw Object From The Top
+        g.setColor(new Color(126, 163, 247));
         QuadCurve2D.Double curve1 = new QuadCurve2D.Double(325,30,315,80,290,100);
         g2.draw(curve1);
         QuadCurve2D.Double curve2 = new QuadCurve2D.Double(325,30,335,80,360,100);
@@ -62,13 +63,17 @@ public class jamGadang extends JPanel{
         g2.draw(curve6);
         
         // Draw bangunan yang ada pintu
+       
         g.drawRect(290, 100, 70, 60);
         g2.drawRoundRect(310, 130, 30, 50, 30, 20); 
         
         // Draw balkon
-        g.setColor(new Color(247, 241, 208));
+       
+        
+        g.setColor(new Color (241, 250, 207));
         g.fillRect(260, 160, 130, 30);
-        g.setColor(Color.black);
+        g.setColor(new Color (126, 163, 247));
+        //g.setColor(Color.red);
         g.drawRect(260, 160, 130, 30);
         
         // Draw garis balkon
@@ -77,9 +82,13 @@ public class jamGadang extends JPanel{
         }      
         
         // Draw kotak jam
+       
         g.drawRect(275,190,100,100);
         
         // Draw kotak1
+       
+        //Color h = new Color(126, 163, 247);
+        //g.setColor(h);
         g.drawRect(265,290,120,60);
         
         // Draw jendela1
@@ -114,6 +123,7 @@ public class jamGadang extends JPanel{
         } 
         
         // Draw gerbang1
+        g.setColor(new Color(126, 163, 247));
         Polygon p1 = new Polygon();
         p1.addPoint(230,480);//kiri atas
         p1.addPoint(230,530);//kiri bawah
@@ -122,7 +132,7 @@ public class jamGadang extends JPanel{
         p1.addPoint(305,480);//kanan atas
         g.setColor(new Color(247, 241, 208));
         g.fillPolygon(p1);
-        g.setColor(Color.black);
+        g.setColor(new Color(126, 163, 247));
         g.drawPolygon(p1);
 
         
@@ -135,25 +145,25 @@ public class jamGadang extends JPanel{
         p2.addPoint(345,480);//kanan atas
         g.setColor(new Color(247, 241, 208));
         g.fillPolygon(p2);
-        g.setColor(Color.black);
+        //g.setColor(Color.black);
+        g.setColor(new Color(126, 163, 247));
         g.drawPolygon(p2);
         
         // Draw gerbang4
+        g.setColor(new Color(247, 241, 208));
         for (int i=0; i<2; i++) {
-            g.drawRect(230,530+(i*20),50,20);
+            g.fillRect(230,530+(i*20),50,20);
         } 
+      
         
         // Draw gerbang5
+        g.setColor(new Color(247, 241, 208));
         for (int i=0; i<2; i++) {
-            g.drawRect(230,530+(i*20),50,20);
-        } 
-        
-        // Draw gerbang6
-        for (int i=0; i<2; i++) {
-            g.drawRect(370,530+(i*20),50,20);
+            g.fillRect(370,530+(i*20),50,20);
         } 
         
         g.drawLine(180,570,470,570);
+       
 
         // Draw pintu
         QuadCurve2D.Double pintu = new QuadCurve2D.Double(300,570,325,460,350,570);
