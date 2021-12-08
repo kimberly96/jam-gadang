@@ -73,7 +73,6 @@ public class jamGadang extends JPanel{
         g.setColor(new Color (241, 250, 207));
         g.fillRect(260, 160, 130, 30);
         g.setColor(new Color (126, 163, 247));
-        //g.setColor(Color.red);
         g.drawRect(260, 160, 130, 30);
         
         // Draw garis balkon
@@ -145,21 +144,18 @@ public class jamGadang extends JPanel{
         p2.addPoint(345,480);//kanan atas
         g.setColor(new Color(247, 241, 208));
         g.fillPolygon(p2);
-        //g.setColor(Color.black);
         g.setColor(new Color(126, 163, 247));
         g.drawPolygon(p2);
         
         // Draw gerbang4
-        g.setColor(new Color(247, 241, 208));
         for (int i=0; i<2; i++) {
-            g.fillRect(230,530+(i*20),50,20);
+            g.drawRect(230,530+(i*20),50,20);
         } 
       
         
         // Draw gerbang5
-        g.setColor(new Color(247, 241, 208));
         for (int i=0; i<2; i++) {
-            g.fillRect(370,530+(i*20),50,20);
+            g.drawRect(370,530+(i*20),50,20);
         } 
         
         g.drawLine(180,570,470,570);
